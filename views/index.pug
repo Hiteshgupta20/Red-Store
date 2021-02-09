@@ -1,0 +1,290 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+    Script 
+      include ../static/index.js
+
+.header
+  .container
+    .navbar
+      .logo
+        a(href='/static/index.html')
+          img(src="/static/images/logo.png" width='125px')
+      nav
+        ul#menuItems
+          li
+            a(href='/') Home
+          li
+            a(href='/products') Products
+          li
+            a(href='#contact-section') About
+          li
+            a(href='#contact-section') Contact
+          li
+            a(href='/account') Account
+      a(href='/cart')
+        img(src='/static/images/cart.png' width='30px' height='30px')
+      img.menu-icon(src='/static/images/menu.png' onclick='menutoggle()')
+    .row
+      .col-2
+        h1
+          | Give Your Workout
+          br
+          | A New Style!
+        p
+          | Success isn&apos;t always about greatness. It&apos;s about consistency.Consistent
+          br
+          | hardwork gains success. Greatness will come.                        
+        a.btn(href='/products') Explore Now &rarr;
+      .col-2
+        img(src='/static/images/image1.png')
+.categories
+  .small-container
+    .row
+      .col-3
+        img(src='/static/images/category-1.jpg')
+      .col-3
+        img(src='/static/images/category-2.jpg')
+      .col-3
+        img(src='/static/images/category-3.jpg')
+  div
+    .small-container
+      h2.title Featured Products
+      .row
+        .col-4
+          a(href='/product-details')
+            img(src='/static/images/product-1.jpg')
+          a(href='/product-details')
+            h4 Red Printed T-Shirt
+          .rating
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star-half
+          p $50.00       
+              button.add-to-cart Add + 
+              
+        .col-4
+          img(src='/static/images/product-2.jpg')
+          h4 Black HRF Shoes
+          .rating
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star-half
+            i.icon.ion-ios-star-outline
+          p $35.00
+          button.add-to-cart Add +
+        .col-4
+          img(src='/static/images/product-3.jpg')
+          h4 Black Printed Trouser
+          .rating
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star-outline
+          p $25.00
+          button.add-to-cart Add +
+        .col-4
+          img(src='/static/images/product-4.jpg')
+          h4 Blue Printed T-Shirt
+          .rating
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star-half
+          p $50.00
+          button.add-to-cart Add +
+      h2.title Latest Products
+      .row
+        .col-4
+          img(src='/static/images/product-5.jpg')
+          h4 Adidas White Sports Shoe
+          .rating
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star-half
+          p $40.00
+          button.add-to-cart Add +
+        .col-4
+          img(src='/static/images/product-6.jpg')
+          h4 Black Puma T-Shirt
+          .rating
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star-half
+            i.icon.ion-ios-star-outline
+          p $50.00
+          button.add-to-cart Add +
+        .col-4
+          img(src='/static/images/product-7.jpg')
+          h4 HRX Socks Pair of 3
+          .rating
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star-outline
+          p $10.00
+          button.add-to-cart Add +
+        .col-4
+          img(src='/static/images/product-8.jpg')
+          h4 Black Fossil Watch
+          .rating
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star-half
+          p $70.00
+          button.add-to-cart Add +
+        .col-4
+          img(src='/static/images/product-9.jpg')
+          h4 Black Dial Roadster Watch
+          .rating
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star-half
+            i.icon.ion-ios-star-outline
+          p $20.00
+          button.add-to-cart Add +
+        .col-4
+          img(src='/static/images/product-10.jpg')
+          h4 Black&amp;Red HRF Shoes
+          .rating
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star-half
+          p $50.00
+          button.add-to-cart Add +
+        .col-4
+          img(src='/static/images/product-11.jpg')
+          h4 Grey Sketcher Sneakers
+          .rating
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star-half
+            i.icon.ion-ios-star-outline
+          p $35.00
+          button.add-to-cart Add +
+        .col-4
+          img(src='/static/images/product-12.jpg')
+          h4 Black Adidas Lower
+          .rating
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star
+            i.icon.ion-ios-star-half
+          p $40.00
+          button.add-to-cart Add +
+    .offer
+      .small-container
+        .row
+          .col-2
+            img.offer-img(src='/static/images/exclusive.png')
+          .col-2
+            p Exclusively Available on RedStore
+            h1 Mi Smart Band 4
+            small
+              | The Mi Smart Band Features a 39.9% larger (than a Mi Band 3) Amoled color full-touch
+              | display with adjustable brightness,so everything is clear as can be.
+            a.btn(href='') Buy Now &rarr;
+    .testimonial
+      .small-container
+        .row
+          .col-3
+            i.icon.ion-ios-quote
+            p
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              | has been the industry&apos;s
+              | standard dummy text ever
+            .rating
+              i.icon.ion-ios-star
+              i.icon.ion-ios-star
+              i.icon.ion-ios-star
+              i.icon.ion-ios-star
+              i.icon.ion-ios-star-half
+            img(src='/static/images/user-1.png')
+            h3 Sean Parker
+          .col-3
+            i.icon.ion-ios-quote
+            p
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              | has been the industry&apos;s
+              | standard dummy text ever
+            .rating
+              i.icon.ion-ios-star
+              i.icon.ion-ios-star
+              i.icon.ion-ios-star
+              i.icon.ion-ios-star
+              i.icon.ion-ios-star-half
+            img(src='/static/images/user-2.png')
+            h3 Mike Smith
+          .col-3
+            i.icon.ion-ios-quote
+            p
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              | has been the industry&apos;s
+              | standard dummy text ever
+            .rating
+              i.icon.ion-ios-star
+              i.icon.ion-ios-star
+              i.icon.ion-ios-star
+              i.icon.ion-ios-star
+              i.icon.ion-ios-star-outline
+            img(src='/static/images/user-3.png')
+            h3 Mabel Joe
+    .brands
+      .small-container
+        .row
+          .col-5
+            img(src='/static/images/logo-godrej.png')
+          .col-5
+            img(src='/static/images/logo-coca-cola.png')
+          .col-5
+            img(src='/static/images/logo-oppo.png')
+          .col-5
+            img(src='/static/images/logo-paypal.png')
+          .col-5
+            img(src='/static/images/logo-philips.png')
+  section#contact-section
+    .footer
+      .container
+        .row
+          .footer-col-1
+            h3 Download Our App
+            p Download App for Android and Ios mobile phone.
+            .app-logo
+              img(src='/static/images/play-store.png')
+              img(src='/static/images/app-store.png')
+          .footer-col-2
+            img(src='/static/images/logo-white.png')
+            p
+              | Our Purpose Is To Sustainely Make the Pleasure and Benefits of Sports Accesssible to the Many
+          .footer-col-3
+            h3 Useful Links
+            ul
+              li Coupons
+              li Blog Post
+              li Return Policy
+              li Join Affiliate
+          .footer-col-4
+            h3 Follow us
+            ul
+              li Facebook
+              li Twitter
+              li Instagram
+              li Youtube
