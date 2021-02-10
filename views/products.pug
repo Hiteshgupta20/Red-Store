@@ -1,0 +1,218 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+
+  
+.container
+  .navbar
+    .logo
+      a(href='/')
+        img(src='/static/images/logo.png' width='125px')
+    nav
+      ul#menuItems
+        li
+          a(href='/') Home
+        li
+          a(href='/products') Products
+        li
+          a(href='#contact-section') About
+        li
+          a(href='#contact-section') Contact
+        li
+          a(href='/account') Account
+    a(href='/cart')
+      img(src='/static/images/cart.png' width='30px' height='30px')
+    img.menu-icon(src='/static/images/menu.png' onclick='menutoggle()')
+.small-container
+  .row.row-2
+    h2 All Products
+    select
+      option Default Shorting
+      option Short By Price
+      option Short By Popularity
+      option Short By Rating
+      option Short By Sale
+  .row
+    .col-4
+      a(href='/product-details')
+        img(src='/static/images/product-1.jpg')
+      a(href='/product-details')
+        h4 Red Printed T-Shirt
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+      p $50.00
+      button.add-to-cart Add +
+    .col-4
+      img(src='/static/images/product-2.jpg')
+      h4 Black HRF Shoes
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+        i.icon.ion-ios-star-outline
+      p $35.00
+      button.add-to-cart Add +
+    .col-4
+      img(src='/static/images/product-3.jpg')
+      h4 Black Printed Trouser
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-outline
+      p $25.00
+      button.add-to-cart Add +
+    .col-4
+      img(src='/static/images/product-4.jpg')
+      h4 Blue Printed T-Shirt
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+      p $50.00
+      button.add-to-cart Add +
+  .row
+    .col-4
+      img(src='/static/images/product-5.jpg')
+      h4 Adidas White Sports Shoe
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+      p $40.00
+      button.add-to-cart Add +
+    .col-4
+      img(src='/static/images/product-6.jpg')
+      h4 Black Puma T-Shirt
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+        i.icon.ion-ios-star-outline
+      p $50.00
+      button.add-to-cart Add +
+    .col-4
+      img(src='/static/images/product-7.jpg')
+      h4 HRX Socks Pair of 3
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-outline
+      p $10.00
+      button.add-to-cart Add +
+    .col-4
+      img(src='/static/images/product-8.jpg')
+      h4 Black Fossil Watch
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+      p $70.00
+      button.add-to-cart Add +
+    .col-4
+      img(src='/static/images/product-9.jpg')
+      h4 Black Dial Roadster Watch
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+        i.icon.ion-ios-star-outline
+      p $20.00
+      button.add-to-cart Add +
+    .col-4
+      img(src='/static/images/product-10.jpg')
+      h4 Black&amp;Red HRF Shoes
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+      p $50.00
+      button.add-to-cart Add +
+    .col-4
+      img(src='/static/images/product-11.jpg')
+      h4 Grey Sketcher Sneakers
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+        i.icon.ion-ios-star-outline
+      p $35.00
+      button.add-to-cart Add +
+    .col-4
+      img(src='/static/images/product-12.jpg')
+      h4 Black Adidas Lower
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+      p $40.00
+      button.add-to-cart Add +
+  //- .page-btn
+  //-   span 1
+  //-   span 2
+  //-   span 3
+  //-   span 4
+  //-   span &rarr;
+//---------------------footer--------------------------
+section#contact-section
+  .footer
+    .container
+      .row
+        .footer-col-1
+          h3 Download Our App
+          p Download App for Android and Ios mobile phone.
+          .app-logo
+            img(src='/static/images/play-store.png')
+            img(src='/static/images/app-store.png')
+        .footer-col-2
+          img(src='/static/images/logo-white.png')
+          p
+            | Our Purpose Is To Sustainely Make the Pleasure and Benefits of Sports Accesssible to the Many
+        .footer-col-3
+          h3 Useful Links
+          ul
+            li Coupons
+            li Blog Post
+            li Return Policy
+            li Join Affiliate
+        .footer-col-4
+          h3 Follow us
+          ul
+            li Facebook
+            li Twitter
+            li Instagram
+            li Youtube
+script.
+  var menuItems = document.getElementById("menuItems");
+  menuItems.style.maxHeight = "0px";
+  function menutoggle() {
+  if (menuItems.style.maxHeight == "0px") {
+  menuItems.style.maxHeight = "200px";
+  }
+  else {
+  menuItems.style.maxHeight = "0px";
+  }
+  }

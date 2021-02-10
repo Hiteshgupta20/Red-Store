@@ -1,0 +1,183 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title All Products - RedStore
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='style.css')
+  link(rel='stylesheet' href='ionicons.min.css')
+  link(rel='stylesheet' href='queries.css')
+  link(href='https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css' rel='stylesheet')
+.container
+  .navbar
+    .logo
+      a(href='/')
+        img(src='/static/images/logo.png' width='125px')
+    nav
+      ul#menuItems
+        li
+          a(href='/') Home
+        li
+          a(href='/products') Products
+        li
+          a(href='#contact-section') About
+        li
+          a(href='#contact-section') Contact
+        li
+          a(href='/account') Account
+    a(href='/cart')
+    a(href='/cart')
+      img(src='/static/images/cart.png' width='30px' height='30px')
+    img.menu-icon(src='/static/images/menu.png' onclick='menutoggle()')
+//------------Single Product Details--------------------
+.small-container.single-product
+  .row
+    .col-2
+      img#ProductImg(src='/static/images/gallery-1.jpg' width='100%')
+      .small-img-row
+        .small-img-col
+          img.small-img(src='/static/images/gallery-1.jpg' width='100%')
+        .small-img-col
+          img.small-img(src='/static/images/gallery-2.jpg' width='100%')
+        .small-img-col
+          img.small-img(src='/static/images/gallery-3.jpg' width='100%')
+        .small-img-col
+          img.small-img(src='/static/images/gallery-4.jpg' width='100%')
+    .col-2
+      p Home / T-Shirt
+      h1 Red Printed T-Shirt by HRX
+      h4 $50.00
+      select
+        option Select Size
+        option XXL
+        option XL
+        option LARGE
+        option MEDIUM
+        option SMALL
+      input(type='number' value='1')
+      a.btn(href='/cart') Add To Cart
+      h3
+        | Product Details 
+        i.icon.ion-ios-arrow-dropright-circle
+      br
+      p
+        | Give your summer wardrobe a style upgrade with the HRX Men&apos;s Active T-Shirt.
+        | Team it with a pair of shorts for your morning workout or a denims for an evening out with the guys.
+//-------------Title---------------------
+.small-container
+  .row.row-2
+    h2 Related Products
+    p View More
+// -----------Products--------------------------
+.small-container
+  .row
+    .col-4
+      img(src='/static/images/product-9.jpg')
+      h4 Black Dial Roadster Watch
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+        i.icon.ion-ios-star-outline
+      p $20.00
+    .col-4
+      img(src='/static/images/product-10.jpg')
+      h4 Black&amp;Red HRF Shoes
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+      p $50.00
+    .col-4
+      img(src='/static/images/product-11.jpg')
+      h4 Grey Sketcher Sneakers
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+        i.icon.ion-ios-star-outline
+      p $35.00
+    .col-4
+      img(src='/static/images/product-12.jpg')
+      h4 Black Adidas Lower
+      .rating
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star
+        i.icon.ion-ios-star-half
+      p $40.00
+//---------------------footer--------------------------
+section#contact-section
+  .footer
+    .container
+      .row
+        .footer-col-1
+          h3 Download Our App
+          p Download App for Android and Ios mobile phone.
+          .app-logo
+            img(src='/static/images/play-store.png')
+            img(src='/static/images/app-store.png')
+        .footer-col-2
+          img(src='/static/images/logo-white.png')
+          p
+            | Our Purpose Is To Sustainely Make the Pleasure and Benefits of Sports Accesssible to the Many
+        .footer-col-3
+          h3 Useful Links
+          ul
+            li Coupons
+            li Blog Post
+            li Return Policy
+            li Join Affiliate
+        .footer-col-4
+          h3 Follow us
+          ul
+            li Facebook
+            li Twitter
+            li Instagram
+            li Youtube
+//---------------JS for Menu Toogle
+script.
+  var menuItems = document.getElementById("menuItems");
+  menuItems.style.maxHeight = "0px";
+  function menutoggle() {
+  if (menuItems.style.maxHeight == "0px") {
+  menuItems.style.maxHeight = "200px";
+  }
+  else {
+  menuItems.style.maxHeight = "0px";
+  }
+  }
+//---------------JS for product gallery-----------
+script.
+  var ProductImg=document.getElementById("ProductImg");
+  var SmallImg=document.getElementsByClassName("small-img");
+  SmallImg[0].onclick = function()
+  {
+  ProductImg.src = SmallImg[0].src;
+  }
+  SmallImg[1].onclick = function()
+  {
+  ProductImg.src = SmallImg[1].src;
+  }
+  SmallImg[2].onclick = function()
+  {
+  ProductImg.src = SmallImg[2].src;
+  }
+  SmallImg[3].onclick = function()
+  {
+  ProductImg.src = SmallImg[3].src;
+  }
+  SmallImg[4].onclick = function()
+  {
+  ProductImg.src = SmallImg[4].src;
+  }
