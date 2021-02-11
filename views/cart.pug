@@ -1,0 +1,107 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+    script 
+      include ../static/index.js 
+
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Cart - RedStore
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='style.css')
+  link(rel='stylesheet' href='ionicons.min.css')
+  link(rel='stylesheet' href='queries.css')
+  link(href='https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css' rel='stylesheet')
+.container
+  .navbar
+    .logo
+      a(href='/')
+        img(src='/static/images/logo.png' width='125px')
+    nav
+      ul#menuItems
+        li
+          a(href='/') Home
+        li
+          a(href='/products') Products
+        li
+          a(href='#contact-section') About
+        li
+          a(href='#contact-section') Contact
+        li
+          a(href='/account') Account
+    a(href='/cart')
+      img(src='/static/images/cart.png' width='30px' height='30px')
+    img.menu-icon(src='/static/images/menu.png' onclick='menutoggle()')
+//---------------------Cart details--------------
+section.container.content-section
+  h2.section-header CART
+  .cart-row
+    span.cart-item.cart-header.cart-column ITEM
+    span.cart-price.cart-header.cart-column PRICE
+    span.cart-quantity.cart-header.cart-column QUANTITY
+  .cart-items
+    .cart-row
+      .cart-item.cart-column
+        img.cart-item-image(src='/static/images/product-1.jpg' width='100' height='100')
+        span.cart-item-title Red Printed T-Shirt
+      span.cart-price.cart-column $50.00
+      .cart-quantity.cart-column
+        input.cart-quantity-input(type='number' value='1')
+        button.btn.btn-danger(type='button') REMOVE
+    .cart-row
+      .cart-item.cart-column
+        img.cart-item-image(src='/static/images/product-2.jpg' width='100' height='100')
+        span.cart-item-title Black Hrf Shoes
+      span.cart-price.cart-column $25.00
+      .cart-quantity.cart-column
+        input.cart-quantity-input(type='number' value='1')
+        button.btn.btn-danger(type='button') REMOVE
+  .cart-total
+    strong.cart-total-title Total
+    span.cart-total-price $75.00
+  button.btn.add-to-cart.btn-purchase(type='button') PURCHASE
+
+//---------------------footer--------------------------
+section#contact-section
+  .footer
+    .container
+      .row
+        .footer-col-1
+          h3 Download Our App
+          p Download App for Android and Ios mobile phone.
+          .app-logo
+            img(src='/static/images/play-store.png')
+            img(src='/static/images/app-store.png')
+        .footer-col-2
+          img(src='/static/images/logo-white.png')
+          p
+            | Our Purpose Is To Sustainely Make the Pleasure and Benefits of Sports Accesssible to the Many
+        .footer-col-3
+          h3 Useful Links
+          ul
+            li Coupons
+            li Blog Post
+            li Return Policy
+            li Join Affiliate
+        .footer-col-4
+          h3 Follow us
+          ul
+            li Facebook
+            li Twitter
+            li Instagram
+            li Youtube
+//---------------JS for Menu Toogle
+script.
+  var menuItems = document.getElementById("menuItems");
+  menuItems.style.maxHeight = "0px";
+  function menutoggle() {
+  if (menuItems.style.maxHeight == "0px") {
+  menuItems.style.maxHeight = "200px";
+  }
+  else {
+  menuItems.style.maxHeight = "0px";
+  }
+  }
