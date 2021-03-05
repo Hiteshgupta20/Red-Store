@@ -8,3 +8,11 @@ Basically it's an E-commerce online shopping store where you will come and buy p
 - Well maintained
 - Google Font Support(Font Awesome)
 - Customized Design
+### Built With
+- Html5
+- Pug (Template Engine)
+- Css3
+- JavaScript
+- Node Js
+- Database: MongoDb
+- IDE: Visual Studio
